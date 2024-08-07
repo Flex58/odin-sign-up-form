@@ -70,12 +70,12 @@ p a {
     width: 60%;
     background-color: #f9fafb;
     height: 100vh;
-    gap: 5rem;
+    gap: 4rem;
     padding-top: 5rem;
 }
 
 .main {
-    height: 300px;
+    height: auto;
     box-shadow: 3px 4px 5px 0px #878787;
     background-color: white;
     display: flex;
@@ -83,6 +83,7 @@ p a {
     align-items: flex-start;
     padding-left: 50px;
     padding-top: 50px;
+    padding-bottom: 50px;
     gap: 25px;
 }
 
@@ -93,6 +94,7 @@ p a {
 
 form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 100px;
 }
@@ -101,6 +103,7 @@ form {
     gap: 30px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 li {
     list-style-type: none;
