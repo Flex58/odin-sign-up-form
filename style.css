@@ -3,8 +3,7 @@
     font-weight: bold;
     src: url(/fonts/Norse-Bold.woff2);
 }
-:root {
-    --width: 768px;
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,51 +15,48 @@ body {
     padding: 0;
     min-height: 100vh;
     box-sizing: border-box;
-    overflow-y: hidden;
+    
 }
 
 .box-left {
-    width: var(--width);
+    width: 40%;
     height: 100vh;
+    background-image: url("./assets/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
-.background-image {
-    width: inherit;
-    height: 100%;
-}
 
 #banner {
-    width: inherit;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     height: 150px;
-    background-color: black;
-    opacity: .5;
-    position: absolute;
-    top: 200px
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logo {
-    position: absolute;
-    top: 220px;
-    left: 230px;
     width: auto;
     height: 120px;
 }
 
 .odin-text {
-    position: absolute;
-    top: 230px;
-    left: 320px;
     font-size: 6rem;
     font-family: "Norse Bold";
     color: white;
 }
 
 p {
-    position: absolute;
     color: white;
-    bottom: 10px;
-    left: 250px;
     margin: 0;
+    padding-bottom: 20px;
+    padding-left: 25%;
 }
 
 p a {
@@ -70,15 +66,14 @@ p a {
 .box-right {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
     background-color: #f9fafb;
+    height: 100vh;
 }
 
 .main {
     height: 300px;
     box-shadow: 3px 4px 5px 0px #878787;
-    position: relative;
-    top: 270px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -110,17 +105,10 @@ li {
 }
 
 button {
-    position: relative;
-    top: 300px;
-    right: 580px;
-    width: 400px;
+    width: 200px;
     height: 50px;
 }
 
 .login-text {
-     position: relative;
-    top: 300px;
-    right: 580px;
-    width: 400px;
-    height: 50px;
+  color: red;
 }
