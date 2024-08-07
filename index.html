@@ -27,16 +27,16 @@
             <form action="" id="form">
                 <div class="container">
                     <li>
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name">
+                        <label for="first-name">FIRST NAME <span aria-label="required">*</span></label>
+                        <input type="text" name="first-name" id="first-name" required>
                     </li>
                     <li>
                         <label for="email">EMAIL</label>
                         <input type="email" name="email" id="email">
                     </li>
                     <li>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <label for="password">PASSWORD <span aria-label="required">*</span></label>
+                        <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                     </li>
                 </div>
                 
@@ -50,8 +50,8 @@
                         <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     </li>
                     <li>
-                        <label for="c-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="c-password" id="c-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <label for="c-password">CONFIRM PASSWORD <span aria-label="required">*</span></label>
+                        <input type="password" name="c-password" id="c-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                     </li>
                 </div>
             </form>
